@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURIOSIDADE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #e6e6e6;
+}
+
+
+.menu-btn {
+    font-size: 35px;
+    padding: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    z-index: 1000;
+}
+
+/* Menu lateral principal */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 220px;
+    height: 100vh;
+    background: #6aa3ff;
+    padding-top: 80px;
+    transition: 0.3s;
+    z-index: 900;
+}
+
+.side-menu.active {
+    left: 0;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu li {
+    margin: 18px 0;
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    padding-left: 20px;
+}
+
+
+.header-trabalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4e8cff;
+    padding: 30px 0;
+    position: relative;
+}
+
+.header-trabalho h1 {
+    font-size: 55px;
+}
+
+.logo {
+    position: absolute;
+    right: 25px;
+    width: 60px;
+}
+
+
+.btn-voltar {
+    position: absolute;
+    top: 70px;
+    left: 15px;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* MENU ESQUERDA */
+.left-menu {
+    width: 150px;
+    background: #6aa3ff;
+    height: calc(100vh - 150px);
+    padding-top: 30px;
+    padding-left: 15px;
+    float: left;
+}
+
+.left-menu a {
+    display: block;
+    margin: 25px 0;
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+}
+
+
+main {
+    margin-left: 5%;
+    margin-top: 50px;
+}
+
+.box {
+    background: white;
+    padding: 40px;
+    margin-bottom: 35px;
+    border-radius: 5px;
+}
+
+.box h2 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.texto-box {
+    background: #e5e5e5;
+    padding: 50px;
+    font-size: 32px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+</style>
+
+  
+    <div class="menu-btn" id="menuBtn">&#9776;</div>
+
+
+    <nav class="side-menu" id="sideMenu">
+        <ul>
+            <li><a href="trabalho.html">trabalhos</a></li>
+            <li><a href="aspectos.html">aspectos legais</a></li>
+            <li><a href="comparacao.html">comparação</a></li>
+            <li><a href="alternativas.html">alternativas</a></li>
+            <li><a href="paises.html">países</a></li>
+            <li><a href="espaco.html">espaço público</a></li>
+            <li><a href="historia.html">história</a></li>
+        </ul>
+    </nav>
+
+ 
+    <header class="header-trabalho">
+        <h1>CURIOSIDADE</h1>
+        <img src="logo.png" class="logo" alt="Logo">
+    </header>
+
+ 
+    <a href="mural.html" class="btn-voltar">X</a>
+
+
+
+
+    <main>
+
+        <div class="box">
+        
+            <div class="texto-box">Flanelinhas são pessoas que oferecem ajuda a motoristas, como orientar o estacionamento, vigiar veículos, limpar vidros ou lataria e prestar informações locais. O nome vem do pano de flanela usado para limpar os carros, e a prática existe desde os anos 1950–60, com o aumento de veículos nas cidades.
+A atividade em si não é crime, mas cobrança obrigatória, intimidação ou ameaça configuram crimes como extorsão ou ameaça. Flanelinhas geralmente atuam em pontos fixos, conhecem bem a rotina do bairro e muitas vezes prestam serviços úteis aos motoristas. O termo às vezes é pejorativo por causa de casos de coerção ou extorsão, mas muitos apenas ajudam e orientam de forma voluntária.</div>
+        </div>
+
+        <div class="box">
+            <h2> Sobre tudo</h2>
+            <div class="texto-box">Por que trabalham?
+Muitos flanelinhas trabalham por necessidade econômica, sem carteira assinada ou outra fonte de renda. Alguns veem como forma de ganhar dinheiro rápido ou complementar a renda familiar.
+Quanto ganham?
+O ganho é variável e informal, geralmente baseado em gorjetas voluntárias dos motoristas. Pode ser de alguns reais por carro a valores maiores em locais movimentados, mas não há salário fixo nem garantia de renda.
+Quem são?
+São pessoas de diferentes perfis: estudantes, desempregados, pessoas em situação de vulnerabilidade social ou moradores da própria região. A atividade não exige qualificação formal.
+Idade certa
+Não existe idade mínima formal para flanelinhas, mas a prática é ilegal para crianças, e jovens abaixo de 16 anos não podem trabalhar sem supervisão legal. A maioria são adolescentes ou adultos jovens, mas há idosos também.</div>
+        </div>
+
+    </main>
+<script>
+    const menuBtn = document.getElementById('menuBtn');
+    const sideMenu = document.getElementById('sideMenu');
+
+    menuBtn.addEventListener('click', () => {
+        sideMenu.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>
