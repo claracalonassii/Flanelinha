@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASPECTOS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #e6e6e6;
+}
+
+/* Botão do menu */
+.menu-btn {
+    font-size: 35px;
+    padding: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    z-index: 1000;
+}
+
+/* Menu lateral principal */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 220px;
+    height: 100vh;
+    background: #6aa3ff;
+    padding-top: 80px;
+    transition: 0.3s;
+    z-index: 900;
+}
+
+.side-menu.active {
+    left: 0;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu li {
+    margin: 18px 0;
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    padding-left: 20px;
+}
+
+.header-trabalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4e8cff;
+    padding: 30px 0;
+    position: relative;
+}
+
+.header-trabalho h1 {
+    font-size: 55px;
+}
+
+.logo {
+    position: absolute;
+    right: 25px;
+    width: 60px;
+}
+
+
+.btn-voltar {
+    position: absolute;
+    top: 70px;
+    left: 15px;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* MENU ESQUERDA */
+.left-menu {
+    width: 150px;
+    background: #6aa3ff;
+    height: calc(100vh - 150px);
+    padding-top: 30px;
+    padding-left: 15px;
+    float: left;
+}
+
+.left-menu a {
+    display: block;
+    margin: 25px 0;
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+}
+
+
+main {
+    margin-left: 25%;
+    margin-top: 40px;
+}
+
+.box {
+    background: white;
+    padding: 40px;
+    margin-bottom: 35px;
+    border-radius: 5px;
+}
+
+.box h2 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.texto-box {
+    background: #e5e5e5;
+    padding: 50px;
+    font-size: 32px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+</style>
+
+   
+    <div class="menu-btn" id="menuBtn">&#9776;</div>
+
+
+    <nav class="side-menu" id="sideMenu">
+        <ul>
+            <li><a href="trabalho.html">trabalhos</a></li>
+            <li><a href="curiosidade.html">curiosidade</a></li>
+            <li><a href="comparacao.html">comparação</a></li>
+            <li><a href="alternativas.html">alternativas</a></li>
+            <li><a href="paises.html">países</a></li>
+            <li><a href="espaco.html">espaço público</a></li>
+            <li><a href="historia.html">história</a></li>
+        </ul>
+    </nav>
+
+
+    <header class="header-trabalho">
+        <h1>ASPECTOS</h1>
+        <img src="logo.png" class="logo" alt="Logo">
+    </header>
+
+ 
+    <a href="mural.html" class="btn-voltar">X</a>
+
+   
+    <aside class="left-menu">
+        <a href="limites.html">limites legais</a>
+        <a href="salario.html">salário</a>
+        <a href="tempo.html">tempo de trabalho</a>
+        <a href="roupa.html">roupa característica</a>
+    </aside>
+
+    
+    <main>
+
+        <div class="box">
+            <h2>Extorsão e ameaça são crimes</h2>
+            <div class="texto-box">Extorsão e ameaça são crimes, inclusive quando praticados por flanelinhas. 
+                Extorsão (Art. 158): obrigar alguém, por violência ou ameaça, a pagar ou dar vantagem.
+                 Ameaça (Art. 147): prometer causar mal injusto ou grave a alguém. Cobrança forçada, intimidação ou pressão para pagar configuram crime — a atividade de flanelinha só é legal quando não envolve coerção.</div>
+        </div>
+
+        <div class="box">
+            <h2>Cobrança obrigatória é ilegal</h2>
+            <div class="texto-box">lanelinhas só podem oferecer ajuda; eles não podem exigir pagamento, nem pressionar, intimidar ou obrigar o motorista a pagar.
+Quando há cobrança forçada, isso pode caracterizar ameaça ou extorsão, que são crimes.</div>
+        </div>
+
+    </main>
+<script>
+    const menuBtn = document.getElementById('menuBtn');
+    const sideMenu = document.getElementById('sideMenu');
+
+    menuBtn.addEventListener('click', () => {
+        sideMenu.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>
