@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRABALHO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #e6e6e6;
+}
+
+.menu-btn {
+    font-size: 35px;
+    padding: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    z-index: 1000;
+}
+
+/* Menu lateral principal */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 220px;
+    height: 100vh;
+    background: #6aa3ff;
+    padding-top: 80px;
+    transition: 0.3s;
+    z-index: 900;
+}
+
+.side-menu.active {
+    left: 0;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu li {
+    margin: 18px 0;
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    padding-left: 20px;
+}
+
+.header-trabalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4e8cff;
+    padding: 30px 0;
+    position: relative;
+}
+
+.header-trabalho h1 {
+    font-size: 55px;
+}
+
+.logo {
+    position: absolute;
+    right: 25px;
+    width: 60px;
+}
+
+.btn-voltar {
+    position: absolute;
+    top: 70px;
+    left: 15px;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* MENU ESQUERDA */
+.left-menu {
+    width: 150px;
+    background: #6aa3ff;
+    height: calc(100vh - 150px);
+    padding-top: 60px;
+    padding-left: 15px;
+    float: left;
+}
+
+.left-menu a {
+    display: block;
+    margin: 25px 0;
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+}
+
+.conteudo-trabalho {
+    margin-left: 200px;
+    padding: 40px;
+}
+
+.box-trabalho {
+    display: inline-block;
+    width: 40%;
+    margin: 25px;
+}
+
+.box-trabalho.full {
+    width: 85%;
+}
+
+.box-trabalho h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.caixa-texto {
+    background: #d4dcee;
+    height: 140px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+</style>
+    <div class="menu-btn" id="menuBtn">&#9776;</div>
+
+    <nav class="side-menu" id="sideMenu">
+        <ul>
+            <li><a href="aspectos.html">aspectos legais</a></li>
+            <li><a href="curiosidade.html">curiosidade</a></li>
+            <li><a href="comparacao.html">comparação</a></li>
+            <li><a href="alternativas.html">alternativas</a></li>
+            <li><a href="paises.html">países</a></li>
+            <li><a href="espaco.html">espaço público</a></li>
+            <li><a href="historia.html">história</a></li>
+        </ul>
+    </nav>
+
+    <header class="header-trabalho">
+        <h1>TRABALHO</h1>
+        <img src="logo.png" class="logo" alt="Logo">
+    </header>
+
+    <a href="mural.html" class="btn-voltar">X</a>
+
+    <aside class="left-menu">
+        <a href="quantos.html">quantos são?</a>
+        <a href="salario.html">salário</a>
+        <a href="tempo.html">tempo de trabalho</a>
+        <a href="roupa.html">roupa característica</a>
+    </aside>
+
+    <main class="conteudo-trabalho">
+
+        <div class="box-trabalho">
+            <h2>Vigiar veículos estacionados</h2>
+            <div class="caixa-texto">Observar os carros enquanto estão estacionados na via pública.Alertar o dono se houver algum risco.Ajudar a orientar o motorista ao estacionar ou sair da vaga.Zelar pela área durante o período em que o veículo permanece ali.</div>
+        </div>
+
+        <div class="box-trabalho">
+            <h2>Ajudar a estacionar</h2>
+            <div class="caixa-texto">Auxiliar motoristas no estacionamento dos veículos, orientando manobras e oferecendo vigilância enquanto o carro permanece na vaga.</div>
+        </div>
+
+        <div class="box-trabalho">
+            <h2>Limpar vidros ou lataria</h2>
+            <div class="caixa-texto">Efetuar a limpeza dos vidros e da lataria dos veículos, oferecendo manutenção básica de aparência enquanto o carro está estacionado.</div>
+        </div>
+
+        <div class="box-trabalho">
+            <h2>Cuidar de vagas</h2>
+            <div class="caixa-texto">Organizar e monitorar vagas de estacionamento na área, orientando motoristas durante a parada e garantindo boa circulação no espaço.</div>
+        </div>
+
+        <div class="box-trabalho full">
+            <h2>Prestar informações locais</h2>
+            <div class="caixa-texto">Prestar informações locais aos motoristas, indicando ruas, pontos de referência, estabelecimentos próximos e orientações úteis sobre a área.</div>
+        </div>
+
+    </main>
+
+
+<script>
+    const menuBtn = document.getElementById('menuBtn');
+    const sideMenu = document.getElementById('sideMenu');
+
+    menuBtn.addEventListener('click', () => {
+        sideMenu.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>
