@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>História</title>
+    <style>
+      
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #e6e6e6;
+}
+
+
+.menu-btn {
+    font-size: 35px;
+    padding: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    z-index: 1000;
+}
+
+/* Menu lateral principal */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 220px;
+    height: 100vh;
+    background: #6aa3ff;
+    padding-top: 80px;
+    transition: 0.3s;
+    z-index: 900;
+}
+
+.side-menu.active {
+    left: 0;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu li {
+    margin: 18px 0;
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    padding-left: 20px;
+}
+
+
+.header-trabalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4e8cff;
+    padding: 30px 0;
+    position: relative;
+}
+
+.header-trabalho h1 {
+    font-size: 55px;
+}
+
+.logo {
+    position: absolute;
+    right: 25px;
+    width: 60px;
+}
+
+
+.btn-voltar {
+    position: absolute;
+    top: 70px;
+    left: 15px;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+        .bloco {
+            background: #e6e6e6;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            min-height: 120px;
+            font-size: 20px;
+        }
+
+        .fotos-container {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .foto-box {
+            background: #e6e6e6;
+            width: 48%;
+            height: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+        .box h2 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.texto-box {
+    background: #e5e5e5;
+    padding: 50px;
+    font-size: 32px;
+    text-align: center;
+    border-radius: 5px;
+}
+    </style>
+</head>
+<body>
+
+    <div class="menu-btn" id="menuBtn">&#9776;</div>
+
+  
+    <nav class="side-menu" id="sideMenu">
+        <ul>
+            <li><a href="trabalho.html">trabalhos</a></li>
+            <li><a href="aspectos.html">aspectos legais</a></li>
+            <li><a href="comparacao.html">comparação</a></li>
+            <li><a href="alternativas.html">alternativas</a></li>
+            <li><a href="paises.html">países</a></li>
+            <li><a href="espaco.html">espaço público</a></li>
+            <li><a href="historia.html">história</a></li>
+        </ul>
+    </nav>
+
+  
+    <header class="header-trabalho">
+        <h1>HISTÓRIA</h1>
+        <img src="logo.png" class="logo" alt="Logo">
+    </header>
+
+
+    <a href="mural.html" class="btn-voltar">X</a>
+     <div class="box">
+            <h2> relatos e países que começou</h2>
+            <div class="texto-box">Origem e países
+A prática de flanelinha surgiu no Brasil, por volta dos anos 1950–60, com o aumento do número de carros nas cidades.
+O nome vem do pano de flanela, usado para limpar vidros e lataria.
+Atividades semelhantes já existiam de forma informal em outras cidades da América Latina, mas o termo “flanelinha” é tipicamente brasileiro.
+Relatos
+Muitos relatos descrevem flanelinhas ajudando motoristas a estacionar, vigiando carros e oferecendo informações locais.
+Casos de cobrança obrigatória ou ameaça também são registrados, o que caracteriza crime.
+Histórias urbanas mostram que flanelinhas marcam pontos fixos, conhecem bem os bairros e frequentemente interagem com moradores e comerciantes.</div>
+        </div>
+        <div class="fotos-container">
+    <div class="foto-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrzSGDuY8mREkvqdp83F7IqwvHrxKO3I4_Xw&s" alt="Foto 1" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
+    </div>
+    <label class="foto-box">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSccMBPrFlYGDbPJ05bcwgel207Z24FyAkJ9qMpgZ7Bzg-ban-T6Z4V9Cxls_WdNmBC360&usqp=CAU" alt="Foto 2" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
+    </div>
+    </label>
+</div>
+    </div>
+<script>
+    const menuBtn = document.getElementById('menuBtn');
+    const sideMenu = document.getElementById('sideMenu');
+
+    menuBtn.addEventListener('click', () => {
+        sideMenu.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>
+
