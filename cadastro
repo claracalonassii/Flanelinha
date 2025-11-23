@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cadastro - Flaneli</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #4e8cff;
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+    }
+
+    .container {
+        background: #ffffff90;
+        width: 350px;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        backdrop-filter: blur(3px);
+    }
+
+    h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    .campo {
+        text-align: left;
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    .senha-box {
+        position: relative;
+    }
+
+    .botao {
+        background: #ffffff;
+        padding: 12px;
+        width: 120px;
+        margin-top: 20px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 20px;
+        border: none;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Flaneli</h1>
+
+    <div class="campo">
+        <label>email:</label>
+        <input type="email" placeholder="Digite seu email" />
+    </div>
+
+    <div class="campo senha-box">
+        <label>senha:</label>
+        <input id="senha" type="password" placeholder="Digite sua senha" />
+    </div>
+
+    <div class="campo">
+        <label>número:</label>
+        <input type="tel" placeholder="Digite seu número" />
+    </div>
+
+    <button class="botao" onclick="irPaginaInicial()">pronto</button>
+</div>
+
+<script>
+function toggleSenha() {
+    const campo = document.getElementById("senha");
+    campo.type = campo.type === "password" ? "text" : "password";
+}
+
+function irPaginaInicial() {
+    window.location.href = "mural.html";
+}
+</script>
+
+</body>
+</html>
+
+
