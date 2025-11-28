@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roupa características</title>
+    <style>
+      
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #e6e6e6;
+}
+
+
+.menu-btn {
+    font-size: 35px;
+    padding: 15px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    z-index: 1000;
+}
+
+/* Menu lateral principal */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 220px;
+    height: 100vh;
+    background: #6aa3ff;
+    padding-top: 80px;
+    transition: 0.3s;
+    z-index: 900;
+}
+
+.side-menu.active {
+    left: 0;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu li {
+    margin: 18px 0;
+}
+
+.side-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    padding-left: 20px;
+}
+
+
+.header-trabalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #4e8cff;
+    padding: 30px 0;
+    position: relative;
+}
+
+.header-trabalho h1 {
+    font-size: 55px;
+}
+
+.logo {
+    position: absolute;
+    right: 25px;
+    width: 60px;
+}
+
+
+.btn-voltar {
+    position: absolute;
+    top: 70px;
+    left: 15px;
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+        .bloco {
+            background: #e6e6e6;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            min-height: 120px;
+            font-size: 20px;
+        }
+
+        .fotos-container {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .foto-box {
+            background: #e6e6e6;
+            width: 48%;
+            height: 380px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            font-size: 22px;
+            cursor: pointer;
+        }
+        .box h2 {
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.texto-box {
+    background: #e5e5e5;
+    padding: 50px;
+    font-size: 32px;
+    text-align: center;
+    border-radius: 5px;
+}
+    </style>
+</head>
+<body>
+
+    <div class="menu-btn" id="menuBtn">&#9776;</div>
+
+  
+    <nav class="side-menu" id="sideMenu">
+        <ul>
+            <li><a href="trabalho.html">trabalhos</a></li>
+            <li><a href="aspectos.html">aspectos legais</a></li>
+            <li><a href="comparacao.html">comparação</a></li>
+            <li><a href="alternativas.html">alternativas</a></li>
+            <li><a href="paises.html">países</a></li>
+            <li><a href="espaco.html">espaço público</a></li>
+            <li><a href="historia.html">história</a></li>
+        </ul>
+    </nav>
+
+  
+    <header class="header-trabalho">
+        <h1> Roupa característica</h1>
+        <img src="logo.png" class="logo" alt="Logo">
+    </header>
+
+
+    <a href="mural.html" class="btn-voltar">X</a>
+     <div class="box">
+            <div class="texto-box">Roupas características
+Colete refletivo ou colete fluorescente (laranja, amarelo, verde).
+Camiseta simples, geralmente usada por baixo do colete.
+Boné ou chapéu para sol (opcional).
+Calça jeans ou bermuda.
+Tênis ou chinelo.
+🧽 Acessórios frequentes
+Pano (o “flanela”) na mão ou no bolso.
+Às vezes um spray com água ou produto de limpeza leve.</div>
+        </div>
+        <div class="fotos-container">
+    <div class="foto-box">
+        <img src="https://http2.mlstatic.com/D_610744-MLB89368942285_082025-O.jpg" alt="Foto 1" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
+    </div>
+    <label class="foto-box">
+        <img src="https://a-static.mlcdn.com.br/%7Bw%7Dx%7Bh%7D/colete-refletivo-seguranca-faixa-sinalizador-obras-transito-nobrand/cldepidistribuidoraltda/3365-verde/8fe49f416ff7cc7365f837dd2483a30c.jpeg" alt="Foto 2" style="width:100%; height:100%; object-fit:cover; border-radius:8px;">
+    </div>
+    </label>
+</div>
+    </div>
+<script>
+    const menuBtn = document.getElementById('menuBtn');
+    const sideMenu = document.getElementById('sideMenu');
+
+    menuBtn.addEventListener('click', () => {
+        sideMenu.classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>
