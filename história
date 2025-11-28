@@ -104,7 +104,7 @@ body {
         .foto-box {
             background: #e6e6e6;
             width: 48%;
-            height: 180px;
+            height: 380px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -183,4 +183,3 @@ Histórias urbanas mostram que flanelinhas marcam pontos fixos, conhecem bem os 
 
 </body>
 </html>
-
