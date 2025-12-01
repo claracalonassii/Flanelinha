@@ -118,8 +118,8 @@
             <li><a href="trabalhos.html">trabalhos</a></li>
             <li><a href="aspectos_legais.html">aspectos legais</a></li>
             <li><a href="curiosidade.html">curiosidades</a></li>
-            <li><a href="comparacao.html">comparação</a></li>
-            <li><a href="alternativas.html">alternativas</a></li>
+            <li><a href="roupa.html"> roupa caracteristicas </a></li>
+            <li><a href="limitesleguais.html">limites legais</a></li>
             <li><a href="paises.html">países</a></li>
             <li><a href="espaco_publico.html">espaço público</a></li>
             <li><a href="historia.html">história</a></li>
@@ -129,7 +129,7 @@
 
     <header>
         <h1>MURAL</h1>
-        <img src="logo.png" class="logo" alt="Logo">
+        <img src="https://i.ibb.co/RTDD8gRS/unnamed.png" class="logo" alt="Logo">
     </header>
 
    
